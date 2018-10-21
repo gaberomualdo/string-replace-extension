@@ -5,6 +5,8 @@ function replaceWords(w1, w2){
 	document.body.innerHTML = document.body.innerHTML.replaceAll(w1, w2);
 }
 if(document.domain != "mail.google.com"){
-	// eg. replace the word "the" with the word "test"
-	replaceWords("the", "test");
+	setTimeout(function(){
+		// eg. replace the word "the" with the word "test"
+		replaceWords("the", "test");
+	},1000);
 }
